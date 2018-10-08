@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #e13632;
+}
+.pc{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+.nav-main{
+    overflow: hidden;
+}
+.nav-main h1{
+    float: left;
+    padding: 1rem;
+}
+.mobile-menu span{
+    float: right;
+    padding: 1rem;
+}
+.banner1{
+    background-image: url(images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 3rem;
+}
+.banner1 h2{
+    color: white;
+}
+.banner-text p{
+    color: #acacac;
+    padding: 1rem;
+}
+.btn1{
+    background-color: #e13632;
+    font-size: 12px;
+    padding: 1rem;
+    color: #fff;
+}
+.btn2{
+    background-color: #fff;
+    font-size: 12px;
+    padding: 1rem;
+    color: #e13632;
+}
+.colortxt{
+    color: #e13632;
+}
+.functions{
+    text-align: center;
+    color: #344051;
+    padding: 1rem;
+}
+.functions i{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.nav-functions li{
+    padding: 1rem;
+}
+.banner2{
+    background-image: url(images/banner2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    height: 250px;
+}
+.banner2-text h2{
+    color: #fff;
+    padding: 2.5rem;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.banner2-btn i{
+    padding: 5px;
+}
+.btn3{
+    background-color: #e13632;
+    font-size: 12px;
+    padding: 1rem;
+    color: #fff;
+}
+.btn4{
+    background-color: #fff;
+    font-size: 12px;
+    padding: 1rem;
+    color: #e13632;
+    border: 2px solid;
+}
+.work{
+    text-align: center;
+}
+.work h2{
+    font-weight: 100;
+}
+.work-text{
+    padding: 1rem;
+}
+.work-text p{
+    text-align: justify;
+    padding: 1rem;
+    font-size: 15px;
+}
+.work-images img{
+    max-width: 350px;
+}
+footer{
+    background-color: #222;
+}
+.part1{
+    text-align: center;
+}
+.touch{
+    padding-top: 2rem;
+}
+.touch p{
+    color: #acacac;
+    padding: 1rem;
+}
+.mail{
+    padding: 0.5rem;
+}
+.btn5{
+    padding: 0.6rem;
+    color: #fff;
+    background: #e13632;
+    border: none;
+}
+.follow{
+    padding-top: 2rem;
+}
+.follow hr{
+    margin-left: 8.2rem;
+}
+.part1{
+    padding: 1rem;
+}
+.part1 h3{
+    color: #fff;
+}
+.links{
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.links a{
+    color: #fff;
+    padding: 1rem;
+    font-size: 25px;
+}
+.links i{
+    padding-top: 1.2rem;
+}
+.part2{
+    text-align: center;
+    padding: 1rem;
+}
+.part2 h3{
+    color: #fff;
+}
+.feed1{
+    text-align: left;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 100;
+}
+.feed1:last-child{
+    padding-bottom: unset;
+}
+.date{
+    color: #9a9a9a;
+}
+.part3{
+   text-align: center; 
+   color: #fff;
+   padding: 1rem;
+}
+.short{
+    width: 20%;
+    margin-left: 8.1rem;
+}
+.flickr-images{
+    padding-top: 1rem;
+}
+.flickr-images img{
+    max-width: 100px;
+}
+.part4{
+    text-align: center;
+    padding: 1rem; 
+    color: #acacac; 
+}
+.part4 img{
+    padding: 1rem;
+}
+.part4-text{
+    text-align: justify;
+}
+.contact{
+    text-align: left;
+    padding-top: 1rem;
+}
+.boldtxt{
+    font-weight: bold;
+}
+.base{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e13632;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*-----------------PC-VIEW-----------------------------------------------*/
+
+@media only screen and (min-width:767px){
+    .pc{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .btn1, .btn2{
+        font-size: 20px;
+        padding: 8px 50px;
+    }
+    .btn3, .btn4{
+        font-size: 1rem;
+    }
+    .btn1:hover{
+        color: #e13632;
+        background-color: #fff;
+        transition: 0.5s;
+        border: 2px solid #e13632;
+    }
+    .btn2:hover{
+        color: #fff;
+        background-color: #e13632;
+        transition: 0.5s;
+        border: 2px solid #fff;
+    }
+    .btn3:hover{
+        color: #e13632;
+        background-color: #fff;
+        transition: 0.5s;
+    }
+    .btn4:hover{
+        color: #fff;
+        background-color: #e13632;
+        transition: 0.5s;
+    }
+    .btn5:hover{
+        cursor: pointer;
+        color: #e13632;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+    .nav-main{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .nav-menu{
+        float: right;
+    }
+    .nav-menu li{
+        float: left;
+        padding: 2rem;
+    }
+    .nav-menu a{
+        color: #9a9a9a;
+    }
+    .nav-menu a:hover{
+        color: #e13632;
+    }
+    .banner1{
+        padding: 7rem;
+    }
+    .banner-text h2{
+        font-size: 5.5rem;
+        font-weight: 100;
+    }
+    .banner-text p{
+        padding: 3rem;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .functions{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        margin-bottom: 3rem;  
+    }
+    .nav-functions{
+        overflow: hidden;
+    }
+    .nav-functions li{
+        width: 22%;
+        float: left;
+        padding: 1rem;
+    }
+    .nav-functions li:hover i{
+        color: #e13632;
+        transition: 0.5s;
+    }
+    .nav-functions p{
+        font-size: 15px;
+    }
+    .banner2{
+        padding: 3rem;
+    }
+    .banner2-text h2{
+        font-size: 2.5rem;
+    }
+    .work-text{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .work-images{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .work-images img{
+        max-width: 300px;
+    }
+    .work-images li{
+        display: inline;
+    }
+    .parts{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .part1{
+        text-align: left;
+        width: 60%;
+    }
+
+    .part1 h3{
+        padding: 1rem;
+        padding-left: unset;
+    }
+    .touch{
+        padding: unset;
+    }
+    .touch p{
+        padding-left: unset;
+    }
+    .links{
+        max-width:unset;
+        padding-top: unset;
+    }
+    .links a{
+        padding-left: unset;
+    }
+    .links i:hover{
+        color: #e13632;
+        transition: 0.3s;
+    }
+    .part2{
+        text-align: left;
+    }
+    .feed1{
+        padding-left: unset;
+    }
+    .part2 h3{
+        padding: 1rem;
+        padding-left: unset;
+    }
+    .part3{
+        text-align: left;
+    }
+    .part3 h3{
+        padding: 1rem;
+        padding-left: unset;
+    }
+    .part4{
+        text-align: left;
+        width: 65%;
+    }
+    .part4 img{
+        padding-left: unset;
+    }
+
+    .contact p{
+        padding: 1rem;
+        padding-left: unset;
+        padding-top: unset;
+    }
+
+/*--------------------------- Overlay Text---------------------- */
+  .work-images img{
+      background-color: #222;
+  }
+  .work-images img:hover {
+    opacity: 0.5;
+  }
+  .work-images a.hovertext {
+    position: relative;
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .work-images a.hovertext::after {
+    content: attr(title);
+    position: absolute;
+    left: 100px;
+    bottom: 120px;
+    text-decoration: none !important;
+    color: #e13632;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .work-images a.hovertext:hover::after, a.hovertext:focus::after {
+    opacity: 1.0;
+  }
+/*--------------------------- Overlay Text---------------------- */
+}
